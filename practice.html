@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+       <!--1.HTML5 STRUCTURE-->
+    <h1>Welcome to HTML5</h1>
+    <p>This is a basic HTML5 page.</p><br><br>
+
+    <!--2. Semantic Tags Example-->
+    <header>
+      <h1>My Website</h1>
+    </header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <section>
+      <h2>About Us</h2>
+
+      <p>This section contains information about us.</p>
+    </section>
+    <article>
+      <h2>Latest News</h2>
+      <p>This is an independent article.</p>
+    </article>
+    <footer>
+      <p>© 2026 My Website</p>
+    </footer><br><br>
+
+
+    <!--3. Multimedia Tags-->
+    <audio controls>
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+<video width="300" controls>
+    <source src="movie.mp4" type="video/mp4">
+    Your browser does not support video.
+</video><br><br>
+
+    <!--4. Graphics Tags-->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "blue";
+ctx.fillRect(20, 20, 100, 50);
+</script><br><br>
+
+
+    <!--5. Form Related HTML5 Tags-->
+    <form>
+    Name: <input type="text"><br><br>
+    Email: <input type="email"><br><br>
+    Date: <input type="date"><br><br>
+    Range: <input type="range"><br><br>
+    Color: <input type="color"><br><br>
+    <input type="submit">
+</form>
+
+ <datalist>
+<input list="browsers" name="browser">
+<datalist id="browsers">
+    <option value="Chrome">
+    <option value="Firefox">
+    <option value="Edge">
+</datalist><br><br>
+     
+<!--6. Content Tags-->
+<p>This is <mark>important</mark> text.</p>
+
+<p>Exam Date:
+<time datetime="2026-03-10">10 March 2026</time>
+</p>
+
+Progress:
+<progress value="70" max="100"></progress>
+
+Meter:
+<meter min="0" max="1" value="0.6"></meter>
+
+
+<!--7. <details> and <summary> (Collapsible content)-->
+    <details>
+    <summary>Click to see details</summary>
+    <p>This content is hidden by default.</p>
+</details>
+
+
+
+<!--8. <figure> and <figcaption>-->
+    <figure>
+    <img src="image.jpg" width="200">
+    <figcaption>Figure 1: Sample Image</figcaption>
+</figure>
+
+
+
+<!--9. <main> and <aside>-->
+    <main>
+    <h2>Main Content</h2>
+    <p>This is main part of webpage.</p>
+</main>
+<aside>
+    <p>This is sidebar content.</p>
+</aside>
+
+
+<!-- 10. <address> (Contact Information)-->
+    <address>
+    Written by XYZ<br>
+    Email: XYZ@example.com
+</address>
+
+<!-- 11. <abbr> (Abbreviation)-->
+    <p><abbr title="Hyper Text Markup Language">HTML</abbr> is a markup language.</p>
+    
+
+<!-- 12. <bdi> (Bi-directional isolation)-->
+    <p>User name: <bdi>XYZ</bdi></p>
+
+    <!--13. <output> (Form result)-->
+        <form oninput="result.value = a.value * b.value">
+    <input type="number" id="a"> ×
+    <input type="number" id="b">
+    = <output name="result"></output>
+</form>
+
+
+
+    <!--14. <template> (Hidden reusable content)-->
+        <template id="myTemplate">
+    <p>This is hidden template content</p>
+</template>
+
+
+
+    <!--15. <track> (Subtitle for video)-->
+    <video width="300" controls>
+    <source src="movie.mp4" type="video/mp4">
+    <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+</video>
+
+
+    <!--16. <picture> (Responsive images)-->
+        <picture>
+    <source media="(min-width: 650px)" srcset="big.jpg">
+    <img src="small.jpg" alt="Sample Image">
+</picture>
+
+        <!--17. <wbr> (Word break opportunity)-->
+        <p>ThisIsAVeryLong<wbr>WordExample</p>
+
+        
+
+    <!--18. <ruby> , <rt> (Annotations)-->
+        <ruby>BCA<rt>3 Year</rt>
+</ruby>
+
+
+
+    <!--19. <embed> (External content)-->
+        <embed src="file.pdf" width="300" height="200">
+
+            
+    <!--20. <dialog> (Popup dialog box – HTML5.2+)-->
+
+        <dialog open>
+    <p>This is a dialog box</p>
+</dialog>
+
+  </body>
+</html>
